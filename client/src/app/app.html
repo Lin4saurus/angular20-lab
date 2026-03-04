@@ -1,0 +1,18 @@
+
+<h1>{{ factoryName }}</h1>
+
+<input [value]="factoryName">
+
+<div 
+  [class.active]="isActive"
+  [style.width.px]="widthSize"
+  class="box">
+  Caja de Producción
+</div>
+<!---------------------------------------------------------->
+<h2>Producción: {{ counter }}</h2>
+
+<button (click)="increase()">
+  Aumentar Producción
+</button>
+<!---------------------------------------------------------->
