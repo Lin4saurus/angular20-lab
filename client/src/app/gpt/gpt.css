@@ -1,0 +1,12 @@
+h2 {
+    color: steelblue;
+  }
+  .box {
+    height: 100px;
+    background-color: lightgray;
+    transition: 0.3s;
+  }
+  
+  .active {
+    background-color: lightgreen;
+  }

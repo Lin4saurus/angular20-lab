@@ -1,21 +1,13 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { Navbar } from './shared/navbar/navbar';
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [ RouterOutlet, Navbar],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
-  factoryName = 'Fábrica Central';
-  isActive = true;
-  widthSize = 200;
-//---------------------------------------------------------
-  counter = 0;
 
-  increase() {
-    this.counter++;
-  }
-//---------------------------------------------------------
 
 }

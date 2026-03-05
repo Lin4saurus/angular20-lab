@@ -1,0 +1,45 @@
+<!--2variables-------------------------------------------------------->
+<h1>{{ factoryName }}</h1>
+
+<input [value]="factoryName">
+
+<div 
+  [class.active]="isActive"
+  [style.width.px]="widthSize"
+  class="box">
+  Caja de Producción
+</div>
+
+<!--3-event binding w increase-------------------------------------------------------->
+<h2>Producción: {{ counter }}</h2>
+
+<button (click)="increase1()">
+  Aumentar Producción
+</button>
+
+
+<!--4Nuevo Control Flow (@if, @for)-------------------------------------------------------->
+<button (click)="showMachines = !showMachines">
+    Toggle Machines
+  </button>
+  
+  @if (showMachines) {
+    <ul>
+      @for (machine of machines; track machine.id) {
+        <li>{{ machine.name }}</li>
+      }
+    </ul>
+  } @else {
+    <p>No machines running</p>
+  }
+
+<!--4-signals------------------------------------------------------->
+  <h2>Production: {{ production() }}</h2>
+<h3>Double: {{ doubleProduction() }}</h3>
+
+<button (click)="increase2()">
+  Increase
+</button>
+
+<!---------------------------------------------------------->
+

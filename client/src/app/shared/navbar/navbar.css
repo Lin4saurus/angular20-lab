@@ -1,0 +1,56 @@
+/* Colores Perú */
+:root {
+    --rojo-peru: #D91023;
+    --rojo-oscuro: #B50D1C;
+    --blanco: #FFFFFF;
+    --texto: #1F2937;
+  }
+  
+  /* Navbar rojo */
+  nav {
+    display: flex;
+    gap: 2rem;
+    padding: 1rem 2.5rem;
+    background: var(--rojo-peru);
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(217, 16, 35, 0.3);
+  }
+  
+  /* Links blancos */
+  nav a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  
+  /* Hover */
+  nav a:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-2px);
+  }
+  
+  /* Responsive */
+  @media (max-width: 640px) {
+    nav {
+      gap: 1rem;
+      padding: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    
+    nav a {
+      font-size: 0.9rem;
+      padding: 0.5rem 1rem;
+    }
+  }
+
+  nav a.active {
+    background: rgba(215, 41, 41, 0.797);
+    transform: translateY(-2px);
+  }
